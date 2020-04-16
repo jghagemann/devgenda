@@ -67,7 +67,6 @@ const LoginCard = () => {
             <StyledFormControl fullWidth>
               <StyledAvatar
                 variant="circle"
-                colorDefautl
                 size="medium"
               />
               <FormItem>
