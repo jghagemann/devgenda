@@ -81,14 +81,14 @@ import KeyboardBackSpaceIcon from '@material-ui/icons/KeyboardBackspace';
               >
                   E-mail
               </StyledTextField>
-              <StyledTextField
+              {/* <StyledTextField
                 label="Senha"
                 type="password"
                 required={true}
                 variant="outlined"
               >
                   Senha
-              </StyledTextField>
+              </StyledTextField> */}
             </FormControl>
             <StyledButton
               variant="contained"

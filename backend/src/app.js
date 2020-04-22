@@ -1,16 +1,20 @@
 const Koa = require('koa');
-const koaBody = require('koa-body');
-const { Client } = require('pg');
-const connectionString = 'postgres://postgres:170636jgh@localhost:5432/devgenda'
-const routes = require('./routes');
-
-const client = new Client({
-  connectionString
-});
-client.connect()
+const Logger = require('koa-logger');
+const bodyParser = require('koa-bodyparser');
+const { config } = require('./db/connection');
 
 const app = new Koa();
-app.use(koaBody());
-app.use(routes.routes());
+const logger = new Logger();
+const PORT = 3333;
 
-app.listen(3333);
+
+app
+  .use(logger)
+  .use(bodyParser())
+
+
+const server = app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
+});
+
+module.exports = server;
