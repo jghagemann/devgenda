@@ -6,7 +6,7 @@ module.exports = {
 
   test: {
     client: 'pg',
-    connection: 'postgres://postgres:170636jgh@localhost:5432/devgenda_test',
+    connection: 'postgres://user:password@localhost:5432/devgenda_test',
     migrations: {
       directory: path.join(BASE_PATH, 'migrations')
     },
@@ -15,7 +15,7 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postgres://postgres:170636jgh@localhost:5432/devgenda',
+    connection: 'postgres://user:password@localhost:5432/devgenda',
     migrations: {
       directory: path.join(BASE_PATH, 'migrations')
     },
