@@ -1,3 +1,4 @@
+const connection = require('../db/connection')
 
 const isLoggedIn = async (ctx, next) => {
   ctx.body = {

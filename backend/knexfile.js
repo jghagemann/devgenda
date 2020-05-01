@@ -1,6 +1,6 @@
 // Update with your config settings.
 const path = require('path');
-const BASE_PATH = path.join(__dirname, 'src', 'server', 'db');
+const BASE_PATH = path.join(__dirname, 'src', 'db');
 
 module.exports = {
 
@@ -15,7 +15,7 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postgres://user:password@localhost:5432/devgenda',
+    connection: 'postgres://user:passwordh@localhost:5432/devgenda',
     migrations: {
       directory: path.join(BASE_PATH, 'migrations')
     },
