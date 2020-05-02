@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d21d775204bc426c85a740f035c62b3b)](https://www.codacy.com/manual/jghagemann/devgenda?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jghagemann/devgenda&amp;utm_campaign=Badge_Grade)
 # devgenda
 
 Challenging myself to learn something new using:
