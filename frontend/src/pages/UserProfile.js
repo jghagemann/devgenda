@@ -12,7 +12,7 @@ const Container = styled.div`
 const StyledTypography = styled(Typography)`
   text-align: center;
   padding-bottom: 30px;
-`
+`;
 
 const CardBox = styled.div`
   display: flex;

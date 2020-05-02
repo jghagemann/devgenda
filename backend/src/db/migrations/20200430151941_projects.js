@@ -1,6 +1,6 @@
 
 exports.up = function(knex) {
-  return knex.schema.createTable("projects", table => {
+  return knex.schema.createTable("projects", (table) => {
     table.increments();
     table.string("projectName");
     table.json("techsUsed");
