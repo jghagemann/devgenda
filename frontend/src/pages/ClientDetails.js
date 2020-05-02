@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Select, Chip, Button } from '@material-ui/core'
-import { Link } from 'react-router-dom';
-import KeyboardBackSpaceIcon from '@material-ui/icons/KeyboardBackspace';
+import React from "react";
+import styled from "styled-components";
+import { Select, Chip, Button } from "@material-ui/core"
+import { Link } from "react-router-dom";
+import KeyboardBackSpaceIcon from "@material-ui/icons/KeyboardBackspace";
 
 const TitleContainer = styled.div`
   display: flex;
@@ -51,7 +51,7 @@ const InfoContainer = styled.div`
 const BoxTitle = styled.h4`
   font-size: 24px;
   text-align: center;
-`
+`;
 
 const InfoBox = styled.div`
   display: flex;
@@ -95,12 +95,11 @@ const PageOptions = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-
-`
+`;
 
 const StyledButton = styled(Button)`
   width: 20px;
-`
+`;
 
 const ClientDetails = () => {
   return (
@@ -210,7 +209,7 @@ const ClientDetails = () => {
         <StyledButton color="primary" variant="outlined">Salvar</StyledButton>
       </PageOptions>
     </>
-  )
+  );
 };
 
 export default ClientDetails;

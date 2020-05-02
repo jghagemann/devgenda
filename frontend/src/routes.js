@@ -1,10 +1,10 @@
-import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Login from './pages/Login';
-import UserProfile from './pages/UserProfile';
-import Register from './pages/Register';
-import ClientDetails from './pages/ClientDetails';
-import AddProject from './pages/AddProject';
+import React from "react"
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Login from "./pages/Login";
+import UserProfile from "./pages/UserProfile";
+import Register from "./pages/Register";
+import ClientDetails from "./pages/ClientDetails";
+import AddProject from "./pages/AddProject";
 
 const Routes = () => {
   return (
@@ -17,7 +17,7 @@ const Routes = () => {
         <Route path="/newproject"  component={AddProject}/>
       </Switch>
     </BrowserRouter>
-  )
-}
+  );
+};
 
 export default Routes;
