@@ -1,7 +1,7 @@
-const Koa = require('koa');
-const Logger = require('koa-logger');
-const bodyParser = require('koa-bodyparser');
-const router = require('./routes/routes');
+const Koa = require("koa");
+const Logger = require("koa-logger");
+const bodyParser = require("koa-bodyparser");
+const router = require("./routes/routes");
 
 const app = new Koa();
 const logger = new Logger();
