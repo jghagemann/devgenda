@@ -4,7 +4,7 @@ const isLoggedIn = async (ctx, next) => {
   ctx.body = {
     status: "success",
     message: "Hello World"
-  }
+  };
   next();
 };
 

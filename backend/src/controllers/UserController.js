@@ -1,7 +1,6 @@
 const connection = require("../db/connection");
 
 const create = async (ctx, next) => {
-  const { firstName, lastName, email } = ctx.request.body;
   const id = 5;
   await connection("users").insert({
     id,
