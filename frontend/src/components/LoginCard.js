@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { StylesProvider } from '@material-ui/core/styles';
+import React from "react";
+import styled from "styled-components";
+import { StylesProvider } from "@material-ui/core/styles";
 import { 
   Card,
   CardContent,
@@ -8,8 +8,8 @@ import {
   FormControl,
   InputAdornment,
   Avatar,
-  Button } from '@material-ui/core';
-import { MailOutline, VpnKeyOutlined } from '@material-ui/icons/';
+  Button } from "@material-ui/core";
+import { MailOutline, VpnKeyOutlined } from "@material-ui/icons/";
 
 const StyledCard = styled(Card)`
   margin-top: 40px;
@@ -107,7 +107,7 @@ const LoginCard = () => {
         </StyledCard>
       </StylesProvider>
     </>
-  )
+  );
 };
 
 export default LoginCard;
