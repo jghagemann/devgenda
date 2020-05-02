@@ -1,10 +1,10 @@
-const Router = require("koa-router");
+const Router = require('koa-router');
 const router = new Router();
-const SessionController = require("../controllers/SessionController");
-const UserController = require("../controllers/UserController");
+const SessionController = require('../controllers/SessionController');
+const UserController = require('../controllers/UserController');
 
-router.get("/", SessionController.isLoggedIn);
+router.get('/', SessionController.isLoggedIn);
 
-router.post("/users", UserController.create);
+router.post('/users', UserController.create);
 
 module.exports = router;

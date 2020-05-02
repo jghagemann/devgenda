@@ -1,4 +1,4 @@
-const connection = require("../db/connection");
+const connection = require('../db/connection')
 
 const isLoggedIn = async (ctx, next) => {
   ctx.body = {
@@ -6,8 +6,8 @@ const isLoggedIn = async (ctx, next) => {
     message: "Hello World"
   }
   next();
-};
+}
 
 module.exports = {
   isLoggedIn
-};
+}
