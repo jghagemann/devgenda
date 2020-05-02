@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Typography, Button } from '@material-ui/core';
-import WelcomeBar from './../components/WelcomeBar';
-import ClientCard from './../components/ClientCard';
-import { Link } from 'react-router-dom';
+import React from "react";
+import styled from "styled-components";
+import { Typography, Button } from "@material-ui/core";
+import WelcomeBar from "./../components/WelcomeBar";
+import ClientCard from "./../components/ClientCard";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   background: #FAFAFA;
@@ -54,7 +54,7 @@ const UserProfile = () => {
         </CardBox>
       </Container>
     </>
-  )
+  );
 };
 
 export default UserProfile;

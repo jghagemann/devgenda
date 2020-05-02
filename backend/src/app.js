@@ -1,7 +1,7 @@
-const Koa = require('koa');
-const Logger = require('koa-logger');
-const bodyParser = require('koa-bodyparser');
-const router = require('./routes/routes');
+const Koa = require("koa");
+const Logger = require("koa-logger");
+const bodyParser = require("koa-bodyparser");
+const router = require("./routes/routes");
 
 const app = new Koa();
 const logger = new Logger();
@@ -12,8 +12,6 @@ app
 .use(bodyParser())
 .use(router.routes());
   
-const server = app.listen(PORT, () => {
-  console.log(`Server listening on port ${PORT}`);
-});
+const server = app.listen(PORT);
 
 module.exports = server;
