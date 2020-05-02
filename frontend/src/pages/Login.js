@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-import LoginCard from "../components/LoginCard";
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import LoginCard from '../components/LoginCard';
 
 const Container = styled.div`
   background: #FAFAFA;
@@ -42,7 +42,7 @@ const Login = () => {
       </TitleContainer>
       <Container>
         <LoginCard />
-        <Link to="/register">Crie sua conta</Link>
+        <Link to='/register'>Crie sua conta</Link>
       </Container>
     </>
   );

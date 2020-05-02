@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import { StylesProvider } from "@material-ui/core/styles";
-import { Typography, Card, CardContent, Button, Icon } from "@material-ui/core";
-import { DeleteOutline } from "@material-ui/icons/";
-import { Link } from "react-router-dom";
+import React from 'react';
+import styled from 'styled-components';
+import { StylesProvider } from '@material-ui/core/styles';
+import { Typography, Card, CardContent, Button, Icon } from '@material-ui/core';
+import { DeleteOutline } from '@material-ui/icons/';
+import { Link } from 'react-router-dom';
 
 const StyledCard = styled(Card)`
   display: flex;
@@ -65,7 +65,7 @@ const ClientCard = () => {
                 Próxima Reunião: 22 de Abril de 2020
               </Info>
             </InfoBox>
-            <Link to="/client" style={{alignSelf: "center", textDecoration: "none"}}>
+            <Link to="/client" style={{alignSelf: 'center', textDecoration: 'none'}}>
               <StyledButton 
                 variant="contained"
                 color="primary"
@@ -80,7 +80,7 @@ const ClientCard = () => {
         </StyledCard>
       </StylesProvider>
     </>
-  );
+  )
 };
 
 export default ClientCard;

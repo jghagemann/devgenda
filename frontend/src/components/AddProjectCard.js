@@ -1,12 +1,12 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 import { 
   Card,
   TextField,
   FormControl,
-  Button } from "@material-ui/core";
-import { Link } from "react-router-dom";
-import KeyboardBackSpaceIcon from "@material-ui/icons/KeyboardBackspace";
+  Button } from '@material-ui/core';
+import { Link } from 'react-router-dom';
+import KeyboardBackSpaceIcon from '@material-ui/icons/KeyboardBackspace';
 
 
   const Container = styled.div`
@@ -103,7 +103,7 @@ import KeyboardBackSpaceIcon from "@material-ui/icons/KeyboardBackspace";
           Voltar
         </StyledLink>
       </Container>
-    );
+    )
   };
 
   export default AddProjectCard;

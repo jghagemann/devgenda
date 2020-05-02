@@ -3,22 +3,22 @@ import { createMuiTheme } from "@material-ui/core/styles";
 export default createMuiTheme({
   palette: {
     primary: {
-      dark: "#000000",
-      main: "#212121",
-      light: "#484848",
+      dark: '#000000',
+      main: '#212121',
+      light: '#484848',
     },
     secondary: {
-      dark: "#AEAEAE",
-      main: "#E0E0E0",
-      light: "#FFFFFF",
+      dark: '#AEAEAE',
+      main: '#E0E0E0',
+      light: '#FFFFFF',
     }
   },
   typography: {
     fontFamily: [
-      "Roboto",
-      "Helvetica Neue",
-      "sans-serif"
-    ].join(","),
+      'Roboto',
+      '"Helvetica Neue"',
+      'sans-serif'
+    ].join(','),
     h1: {
       fontSize: 37
     },
@@ -37,8 +37,8 @@ export default createMuiTheme({
   },
   overrides: {
     MuiCssBaseline: {
-      "@global": {
-        "@font-face": ["Roboto"],
+      '@global': {
+        '@font-face': ['Roboto'],
       },
     },
   },
