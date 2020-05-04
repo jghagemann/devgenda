@@ -19,7 +19,8 @@
     "koa-json": "^2.0.2",
     "koa-logger": "^3.2.1",
     "koa-router": "^8.0.8",
-    "pg": "^8.0.2"
+    "pg": "^8.0.2",
+    "uuid": "^8.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"
