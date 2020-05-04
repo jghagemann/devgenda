@@ -16,7 +16,7 @@ export default createMuiTheme({
   typography: {
     fontFamily: [
       "Roboto",
-      ""Helvetica Neue"",
+      "Helvetica Neue",
       "sans-serif"
     ].join(","),
     h1: {
