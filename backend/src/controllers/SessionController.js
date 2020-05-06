@@ -1,12 +1,16 @@
 const connection = require("../db/connection");
 
-const isLoggedIn = async (ctx, next) => {
-  ctx.body = {
-    status: "success",
-    message: "Hello World"
+const isLoggedIn = async (ctx) => {
+  const { email } = ctx.request.body;
+  const user = await connection("users")
+    .where("email", email)
+    .select("firstName", "lastName")
+    .first();
+  if (!user) {
+    return response.status(400).json({ error: "Não há usuário cadastrado com este E-mail!" })
   };
-  next();
-};
+  return ctx.response.body = user;
+}
 
 module.exports = {
   isLoggedIn
