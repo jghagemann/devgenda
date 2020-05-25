@@ -7,7 +7,7 @@ import {
   Button } from "@material-ui/core";
 import { Link, useHistory } from "react-router-dom";
 import KeyboardBackSpaceIcon from "@material-ui/icons/KeyboardBackspace";
-import api from '../services/api';
+import handleRegister from "../services/handleRegisterService";
 
 
   const Container = styled.div`
@@ -58,24 +58,7 @@ import api from '../services/api';
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
     const history = useHistory();
-
-    const handleRegister = async (e) => {
-      e.preventDefault();
-      const data = {
-        firstName,
-        lastName,
-        email
-      };
-      try {
-        const response = await api.post('users', data);
-        alert("Usuário cadastrado com sucesso!");
-        history.push('/');
-      } catch (err) {
-        alert("Erro no cadastro, tente novamente!");
-        console.log(err);
-      }
-    }
-
+    
     return (
       <Container>
         <Title>Crie sua Conta</Title>
@@ -126,7 +109,7 @@ import api from '../services/api';
             </StyledButton>
           </StyledCard>
         </Form>
-        <StyledLink to="/">
+        <StyledLink to="/login">
           <KeyboardBackSpaceIcon />
           Voltar
         </StyledLink>
