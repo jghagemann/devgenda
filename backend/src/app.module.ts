@@ -5,6 +5,7 @@ import { UsersModule } from './users/users.module';
 import { Connection } from 'typeorm';
 import { databaseConfig } from './configs/config';
 import { DatabaseConfig } from './configs/database.config';
+import { SignupModule } from './signup/signup.module';
 
 @Module({
   imports: [
@@ -16,7 +17,8 @@ import { DatabaseConfig } from './configs/database.config';
       isGlobal: true,
       load: [databaseConfig]
     }),
-    UsersModule
+    UsersModule,
+    SignupModule
   ],
   controllers: [],
   providers: [],
@@ -24,4 +26,3 @@ import { DatabaseConfig } from './configs/database.config';
 export class AppModule {
   constructor(private connection: Connection) {}
 }
-

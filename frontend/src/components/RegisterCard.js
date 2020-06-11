@@ -5,11 +5,9 @@ import {
   TextField,
   FormControl,
   Button } from "@material-ui/core";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import KeyboardBackSpaceIcon from "@material-ui/icons/KeyboardBackspace";
-import handleRegister from "../services/handleRegisterService";
-
-
+import createUser from "../services/authService";
   const Container = styled.div`
     display: flex;
     flex-direction: column;   
@@ -21,7 +19,7 @@ import handleRegister from "../services/handleRegisterService";
     text-align: center;
   `;
 
-  const Form = styled.div`
+  const Form = styled.form`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,7 +55,7 @@ import handleRegister from "../services/handleRegisterService";
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
-    const history = useHistory();
+    const [password, setPassword] = useState("");
     
     return (
       <Container>
@@ -92,18 +90,20 @@ import handleRegister from "../services/handleRegisterService";
               >
                 E-mail
               </StyledTextField>
-              {/* <StyledTextField
+              <StyledTextField
                 label="Senha"
                 type="password"
                 required={true}
                 variant="outlined"
+                value={password}
+                onChange={e => setPassword(e.target.value)}
               >
                   Senha
-              </StyledTextField> */}
+              </StyledTextField>
             </FormControl>
             <StyledButton
               variant="contained"
-              onClick={handleRegister}
+              onClick={() => createUser(firstName, lastName, email, password)}
             >
               Enviar
             </StyledButton>

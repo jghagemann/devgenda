@@ -41,7 +41,7 @@ const Login = () => {
       </TitleContainer>
       <Container>
         <LoginCard />
-        <Link to="/register">Crie sua conta</Link>
+        <Link to="/signup">Crie sua conta</Link>
       </Container>
     </>
   );

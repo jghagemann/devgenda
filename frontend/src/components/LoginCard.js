@@ -83,7 +83,7 @@ const LoginCard = () => {
                   }}
                 />
               </FormItem>
-              {/* <FormItem>
+              <FormItem>
                 <TextField
                   label="Password"
                   type="password"
@@ -96,7 +96,7 @@ const LoginCard = () => {
                     ),
                   }}
                 />
-              </FormItem> */}
+              </FormItem>
             </StyledFormControl>
           </StyledCardContent>
           <StyledButton
