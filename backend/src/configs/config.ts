@@ -6,6 +6,7 @@ export const databaseConfig = () => ({
     username: process.env.DATABASE_USERNAME,
     password: process.env.DATABASE_PASSWORD,
     database: process.env.DATABASE_NAME,
+    jwtKey: process.env.JWT_SECRET,
     entities: ["dist/**/*.entity{.ts,.js}"],
     migrations: ["src/migrations/**/*.js"],
     synchronize: true,

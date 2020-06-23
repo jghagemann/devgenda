@@ -2,10 +2,11 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from "@nestjs/config";
 import { UsersModule } from './users/users.module';
-import { Connection } from 'typeorm';
 import { databaseConfig } from './configs/config';
 import { DatabaseConfig } from './configs/database.config';
-import { SignupModule } from './signup/signup.module';
+import { AuthModule } from './auth/auth.module';
+import { AppController } from './app/app.controller';
+import { ConfigService } from '@nestjs/config';
 
 @Module({
   imports: [
@@ -18,11 +19,11 @@ import { SignupModule } from './signup/signup.module';
       load: [databaseConfig]
     }),
     UsersModule,
-    SignupModule
+    AuthModule,
+    ConfigModule
   ],
-  controllers: [],
-  providers: [],
+  controllers: [AppController],
+  providers: [ConfigService],
+  exports: [ConfigModule]
 })
-export class AppModule {
-  constructor(private connection: Connection) {}
-}
+export class AppModule {}
